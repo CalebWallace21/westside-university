@@ -27,6 +27,7 @@ axios.get(`http://localhost:3005/students?class=${this.props.match.params.class}
     ));
     return (
       <div className="box">
+        <Link to="/#"><button className='btn'>Back</button></Link>
         <h1>{this.props.match.params.class}</h1>
         <h2>ClassList:</h2>
         {students}
